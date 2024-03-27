@@ -20,7 +20,7 @@ def generate_booking_data():
     
 def lambda_handler(event, context):
     i=0
-    while(i<30):
+    while(i<50):
         sales_order = generate_booking_data()
         print(sales_order)
         sqs_client.send_message(
